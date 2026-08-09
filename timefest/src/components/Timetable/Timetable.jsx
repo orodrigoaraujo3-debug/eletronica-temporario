@@ -5,12 +5,12 @@ import { useReveal } from "../../hooks/useReveal";
 import "./Timetable.css";
 
 export function Timetable() {
-  const [filter, setFilter] = useState("ALL");
+  const [filter, setFilter] = useState("TODOS");
   const headRef = useReveal();
   const listRef = useReveal();
 
   const rows = useMemo(
-    () => timetableData.filter((row) => filter === "ALL" || row.stage === filter || row.stage === "ALL"),
+    () => timetableData.filter((row) => filter === "TODOS" || row.stage === filter || row.stage === "TODOS"),
     [filter]
   );
 
@@ -18,14 +18,14 @@ export function Timetable() {
     <section className="timetable section" data-theme="light" aria-labelledby="timetable-title">
       <div className="container">
         <div ref={headRef} className="timetable__head reveal">
-          <span className="micro-label">TIMETABLE</span>
+          <span className="micro-label">PROGRAMAÇÃO</span>
           <h2 id="timetable-title" className="timetable__title">
-            YOUR NIGHT
+            SUA NOITE
             <br />
-            IN TIME.
+            NO TEMPO.
           </h2>
 
-          <div className="timetable__filters" role="group" aria-label="Filter by stage">
+          <div className="timetable__filters" role="group" aria-label="Filtrar por palco">
             {stageFilters.map((f) => (
               <button
                 key={f}

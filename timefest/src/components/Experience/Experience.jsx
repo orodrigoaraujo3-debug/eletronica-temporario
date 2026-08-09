@@ -2,11 +2,11 @@ import { useReveal } from "../../hooks/useReveal";
 import "./Experience.css";
 
 const CONCEPTS = [
-  { index: "01", name: "SOUND", desc: "Precision audio engineering across the entire venue.", size: "lg" },
-  { index: "02", name: "LIGHT", desc: "Four rigs, one language of movement and color.", size: "sm" },
-  { index: "03", name: "IMMERSIVE ART", desc: "Large-scale installations that react and evolve.", size: "sm" },
-  { index: "04", name: "FOOD & DRINKS", desc: "Curated flavors to keep you moving.", size: "sm" },
-  { index: "05", name: "COMMUNITY", desc: "A global family united by music and time.", size: "md" },
+  { index: "01", name: "SOM", desc: "Engenharia de áudio de precisão em todo o espaço do evento.", size: "lg" },
+  { index: "02", name: "LUZ", desc: "Quatro rigs, uma só linguagem de movimento e cor.", size: "sm" },
+  { index: "03", name: "ARTE IMERSIVA", desc: "Instalações de grande escala que reagem e evoluem.", size: "sm" },
+  { index: "04", name: "COMIDA & BEBIDA", desc: "Sabores selecionados para manter você em movimento.", size: "sm" },
+  { index: "05", name: "COMUNIDADE", desc: "Uma família global unida pela música e pelo tempo.", size: "md" },
 ];
 
 export function Experience() {
@@ -17,11 +17,11 @@ export function Experience() {
     <section id="experience" className="experience section" data-theme="light" aria-labelledby="experience-title">
       <div className="container">
         <div ref={headRef} className="experience__head reveal">
-          <span className="micro-label">THE NIGHT EXPERIENCE</span>
+          <span className="micro-label">A EXPERIÊNCIA DA NOITE</span>
           <h2 id="experience-title" className="experience__title">
-            A JOURNEY THROUGH
+            UMA JORNADA POR
             <br />
-            SOUND, SPACE AND TIME.
+            SOM, ESPAÇO E TEMPO.
           </h2>
         </div>
 

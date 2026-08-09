@@ -10,12 +10,12 @@ export function Stages() {
     <section id="stages" className="stages section" data-theme="light" aria-labelledby="stages-title">
       <div className="container">
         <div ref={headRef} className="stages__head reveal">
-          <p className="chapter-mark">CHAPTER 04 — THE WORLDS</p>
-          <span className="micro-label">FOUR STAGES</span>
+          <p className="chapter-mark">CAPÍTULO 04 — OS MUNDOS</p>
+          <span className="micro-label">QUATRO PALCOS</span>
           <h2 id="stages-title" className="stages__title">
-            FOUR WORLDS.
+            QUATRO MUNDOS.
             <br />
-            ONE NIGHT.
+            UMA NOITE.
           </h2>
         </div>
       </div>

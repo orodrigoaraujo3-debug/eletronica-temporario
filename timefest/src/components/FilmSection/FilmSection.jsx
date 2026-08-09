@@ -46,10 +46,10 @@ export function FilmSection() {
     <section ref={sectionRef} className="film" data-theme="dark" aria-label="Enter the experience">
       <div className="film__sticky">
         <span ref={labelRef} className="micro-label film__label">
-          ENTER THE EXPERIENCE
+          ENTRE NA EXPERIÊNCIA
         </span>
         <div ref={frameRef} className="film__frame">
-          <img src={assets.installations.timeRingHanging} alt="A luminous ring installation hanging above the crowd" loading="lazy" />
+          <img src={assets.installations.timeRingHanging} alt="Instalação luminosa em anel suspensa sobre o público" loading="lazy" />
         </div>
       </div>
     </section>

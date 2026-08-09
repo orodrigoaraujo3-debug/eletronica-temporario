@@ -47,20 +47,17 @@ function SnapshotItem({ icon, top, bottom }) {
   );
 }
 
+// Rendered as the closing strip of the Manifesto section — not a standalone section.
 export function EventSnapshot() {
   const revealRef = useReveal();
 
   return (
-    <section className="snapshot section" data-theme="light" aria-label="Event snapshot">
-      <div className="container">
-        <div ref={revealRef} className="snapshot__grid reveal">
-          <SnapshotItem icon="calendar" top={eventData.date.display} bottom={eventData.date.weekday} />
-          <SnapshotItem icon="pin" top={eventData.venue.name} bottom={eventData.venue.city.toUpperCase()} />
-          <SnapshotItem icon="stages" top={`${eventData.stagesCount} STAGES`} bottom="ONE EXPERIENCE" />
-          <SnapshotItem icon="clock" top={eventData.date.doors} bottom="DOORS" />
-          <SnapshotItem icon="age" top={eventData.age} bottom="EVENT" />
-        </div>
-      </div>
-    </section>
+    <div ref={revealRef} className="snapshot__grid reveal">
+      <SnapshotItem icon="calendar" top={eventData.date.display} bottom={eventData.date.weekday} />
+      <SnapshotItem icon="pin" top={eventData.venue.name} bottom={eventData.venue.city.toUpperCase()} />
+      <SnapshotItem icon="stages" top={`${eventData.stagesCount} PALCOS`} bottom="UMA EXPERIÊNCIA" />
+      <SnapshotItem icon="clock" top={eventData.date.doors} bottom="ABERTURA" />
+      <SnapshotItem icon="age" top={eventData.age} bottom="EVENTO" />
+    </div>
   );
 }

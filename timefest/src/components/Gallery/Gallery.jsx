@@ -24,48 +24,48 @@ export function Gallery() {
   const headRef = useReveal();
 
   return (
-    <section className="gallery section" data-theme="light" aria-label="Visual story">
+    <section className="gallery section" data-theme="light" aria-label="Narrativa visual">
       <div className="container">
         <div ref={headRef} className="gallery__head reveal">
-          <span className="micro-label">VISUAL STORY</span>
+          <span className="micro-label">NARRATIVA VISUAL</span>
         </div>
 
         <div className="gallery__grid">
           <GalleryImage
             className="gallery__img--a"
             src={assets.gallery.crowdHandsWide}
-            alt="Crowd with hands raised under laser light"
+            alt="Multidão com as mãos levantadas sob luz de laser"
           />
-          <GalleryImage className="gallery__img--b" src={assets.gallery.eyeCloseup} alt="Close-up of an eye under purple light" />
+          <GalleryImage className="gallery__img--b" src={assets.gallery.eyeCloseup} alt="Close de um olho sob luz roxa" />
 
-          <GalleryText className="gallery__text--a">BE PRESENT.</GalleryText>
+          <GalleryText className="gallery__text--a">ESTEJA PRESENTE.</GalleryText>
 
           <GalleryImage
             className="gallery__img--c"
             src={assets.gallery.profileClosedEyes}
-            alt="Profile portrait with eyes closed, dancing"
+            alt="Retrato de perfil com os olhos fechados, dançando"
           />
 
-          <GalleryImage className="gallery__img--d" src={assets.gallery.hairMotion} alt="Hair in motion under stage light" />
-          <GalleryImage className="gallery__img--e" src={assets.gallery.duoCouple} alt="Duo dancing close together" />
+          <GalleryImage className="gallery__img--d" src={assets.gallery.hairMotion} alt="Cabelo em movimento sob a luz do palco" />
+          <GalleryImage className="gallery__img--e" src={assets.gallery.duoCouple} alt="Dupla dançando próxima, sorrindo" />
 
           <GalleryText className="gallery__text--b">
-            LOSE TRACK
+            PERCA A NOÇÃO
             <br />
-            OF TIME.
+            DO TEMPO.
           </GalleryText>
 
           <GalleryImage
             className="gallery__img--f"
             src={assets.gallery.crowdSunriseHands}
-            alt="Crowd at sunrise with hands raised"
+            alt="Multidão ao amanhecer com as mãos levantadas"
           />
 
-          <GalleryImage className="gallery__img--g" src={assets.gallery.crowdBack} alt="Crowd seen from behind under lasers" />
+          <GalleryImage className="gallery__img--g" src={assets.gallery.crowdBack} alt="Multidão vista de costas sob lasers" />
           <GalleryImage
             className="gallery__img--h"
             src={assets.gallery.handsMotionBlur}
-            alt="Hands raised, motion blur"
+            alt="Mãos levantadas, com desfoque de movimento"
           />
         </div>
       </div>

@@ -11,12 +11,12 @@ export function Installations() {
     <section className="installations section" data-theme="light" aria-labelledby="installations-title">
       <div className="container">
         <div ref={headRef} className="installations__head reveal">
-          <p className="chapter-mark">CHAPTER 05 — THE EXPERIENCE</p>
-          <span className="micro-label">IMMERSIVE INSTALLATIONS</span>
+          <p className="chapter-mark">CAPÍTULO 05 — A EXPERIÊNCIA</p>
+          <span className="micro-label">INSTALAÇÕES IMERSIVAS</span>
           <h2 id="installations-title" className="installations__title">
-            THE SPACE
+            O ESPAÇO
             <br />
-            REACTS TO YOU.
+            REAGE A VOCÊ.
           </h2>
         </div>
 

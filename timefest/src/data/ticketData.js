@@ -1,28 +1,40 @@
-// Prices are placeholders (—) until batches go on sale. Never present as official.
+// Valores ilustrativos do 1º lote — servem para dar completude ao site enquanto os preços
+// oficiais não são anunciados. Atualize aqui quando os lotes reais forem definidos.
 export const ticketData = [
   {
     id: "general",
-    name: "GENERAL ACCESS",
-    price: null,
-    batch: "1ST BATCH",
+    name: "ACESSO GERAL",
+    price: "290",
+    batch: "1º LOTE",
     highlight: false,
-    features: ["Access to all areas", "Immersive experiences", "Premium restrooms"],
+    features: ["Acesso a todas as áreas", "Experiências imersivas", "Banheiros premium"],
   },
   {
     id: "vip",
-    name: "VIP EXPERIENCE",
-    price: null,
-    batch: "1ST BATCH",
+    name: "EXPERIÊNCIA VIP",
+    price: "490",
+    batch: "1º LOTE",
     highlight: true,
-    badge: "MOST POPULAR",
-    features: ["All-area access", "Exclusive VIP zone", "Fast entry", "Premium restrooms", "Lockers"],
+    badge: "MAIS VENDIDO",
+    features: [
+      "Acesso a todas as áreas",
+      "Área VIP exclusiva",
+      "Entrada expressa",
+      "Banheiros premium",
+      "Guarda-volumes",
+    ],
   },
   {
     id: "time-pass",
     name: "TIME PASS",
-    price: null,
-    batch: "LIMITED",
+    price: "990",
+    batch: "LIMITADO",
     highlight: false,
-    features: ["Everything in VIP", "Backstage access", "Exclusive lounge", "Meet & greet select"],
+    features: [
+      "Tudo da Experiência VIP",
+      "Acesso a bastidores",
+      "Lounge exclusivo",
+      "Meet & greet selecionado",
+    ],
   },
 ];

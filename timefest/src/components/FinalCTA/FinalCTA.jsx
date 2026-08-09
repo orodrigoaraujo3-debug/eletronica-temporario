@@ -1,6 +1,7 @@
 import { assets } from "../../assets/manifest";
 import { eventData } from "../../data/eventData";
 import { useReveal } from "../../hooks/useReveal";
+import { Newsletter } from "../Newsletter/Newsletter";
 import "./FinalCTA.css";
 
 export function FinalCTA() {
@@ -11,8 +12,13 @@ export function FinalCTA() {
       <div className="final-cta__bg" aria-hidden="true">
         <img src={assets.textures.darkStreaksB} alt="" />
       </div>
+
+      <div className="container final-cta__newsletter-wrap">
+        <Newsletter />
+      </div>
+
       <div ref={revealRef} className="container final-cta__inner reveal">
-        <img className="final-cta__ring" src={assets.objects3d.ringsStacked} alt="" aria-hidden="true" />
+        <img className="final-cta__ring" src={assets.objects3d.ringFront} alt="" aria-hidden="true" />
 
         <h2 id="final-cta-title" className="final-cta__title">
           TIME IS
@@ -27,7 +33,7 @@ export function FinalCTA() {
         </p>
 
         <a href="#tickets" className="btn btn--ghost-light final-cta__btn">
-          SECURE YOUR PASS <span className="arrow">→</span>
+          GARANTA SEU INGRESSO <span className="arrow">→</span>
         </a>
 
         <p className="final-cta__signature">{eventData.signature}</p>

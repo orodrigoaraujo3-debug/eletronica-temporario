@@ -4,10 +4,10 @@ import "./Header.css";
 
 const NAV_ITEMS = [
   { label: "LINEUP", href: "#lineup" },
-  { label: "EXPERIENCE", href: "#experience" },
-  { label: "STAGES", href: "#stages" },
+  { label: "EXPERIÊNCIA", href: "#experience" },
+  { label: "PALCOS", href: "#stages" },
   { label: "INFO", href: "#venue" },
-  { label: "TICKETS", href: "#tickets" },
+  { label: "INGRESSOS", href: "#tickets" },
 ];
 
 export function Header() {
@@ -64,14 +64,14 @@ export function Header() {
         ].join(" ")}
       >
         <a className="skip-link" href="#main">
-          Skip to content
+          Pular para o conteúdo
         </a>
 
-        <a href="#top" className="site-header__logo" aria-label="TIME FEST — home">
+        <a href="#top" className="site-header__logo" aria-label="TIME FEST — início">
           TIME<br />FEST
         </a>
 
-        <nav className="site-header__nav" aria-label="Primary">
+        <nav className="site-header__nav" aria-label="Principal">
           {NAV_ITEMS.map((item) => (
             <a key={item.label} href={item.href}>
               {item.label}
@@ -87,14 +87,14 @@ export function Header() {
             </span>
           </div>
           <a href="#tickets" className="btn btn--primary site-header__cta">
-            GET TICKETS <span className="arrow">→</span>
+            GARANTIR INGRESSO <span className="arrow">→</span>
           </a>
         </div>
 
         <button
           type="button"
           className="site-header__burger"
-          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((v) => !v)}
         >
@@ -104,7 +104,7 @@ export function Header() {
       </header>
 
       <div className={`mobile-menu ${menuOpen ? "mobile-menu--open" : ""}`} aria-hidden={!menuOpen}>
-        <nav aria-label="Mobile">
+        <nav aria-label="Menu mobile">
           {NAV_ITEMS.map((item, i) => (
             <a
               key={item.label}
@@ -120,7 +120,7 @@ export function Header() {
           <span>{eventData.date.display}</span>
           <span>{eventData.venue.name} · {eventData.venue.city}</span>
           <a href="#tickets" className="btn btn--primary" onClick={() => setMenuOpen(false)}>
-            GET TICKETS <span className="arrow">→</span>
+            GARANTIR INGRESSO <span className="arrow">→</span>
           </a>
         </div>
       </div>

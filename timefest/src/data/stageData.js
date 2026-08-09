@@ -1,45 +1,45 @@
-// Editable stage / "world" definitions.
+// Definições editáveis dos palcos / "mundos".
 export const stageData = [
   {
     id: "void",
     index: "01",
     name: "VOID",
-    role: "MAIN STAGE",
+    role: "PALCO PRINCIPAL",
     genre: "Techno / Peak Time",
     swatch: "#0f0f11",
-    description: "The center of gravity. Dark, relentless, engineered for peak time.",
+    description: "O centro de gravidade da noite. Escuro, intenso, construído para o peak time.",
     image: "void",
   },
   {
     id: "chrome",
     index: "02",
     name: "CHROME",
-    role: "WAREHOUSE",
+    role: "GALPÃO",
     genre: "Minimal / Deep Tech",
     swatch: "#b8bdc4",
-    description: "Metal, mirrors, low light. A cold room that gets warmer as the night moves.",
+    description: "Metal, espelhos, luz baixa. Uma sala fria que esquenta conforme a noite avança.",
     image: "chromeB",
   },
   {
     id: "pulse",
     index: "03",
     name: "PULSE",
-    role: "GARDEN",
-    genre: "House / Melodic",
+    role: "JARDIM",
+    genre: "House / Melódico",
     swatch: "#b99bff",
-    description: "Open air, lavender light, a fluid rhythm built for movement.",
+    description: "Ar livre, luz lilás, um ritmo fluido construído para o movimento.",
     image: "pulse",
   },
   {
     id: "radiance",
     index: "04",
     name: "RADIANCE",
-    role: "SUNRISE STAGE",
-    genre: "Melodic / Electronica",
+    role: "PALCO DO AMANHECER",
+    genre: "Melódico / Electronica",
     swatch: "#ffc1ba",
-    description: "Where the night ends and the light begins. Built for the last set.",
+    description: "Onde a noite termina e a luz começa. Construído para o último set.",
     image: "radianceB",
   },
 ];
 
-export const stageFilters = ["ALL", ...stageData.map((s) => s.name)];
+export const stageFilters = ["TODOS", ...stageData.map((s) => s.name)];

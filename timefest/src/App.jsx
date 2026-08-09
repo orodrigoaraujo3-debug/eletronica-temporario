@@ -1,10 +1,8 @@
 import { Header } from "./components/Header/Header";
 import { HeroSequence } from "./components/Hero/HeroSequence";
 import { Manifesto } from "./components/Manifesto/Manifesto";
-import { EventSnapshot } from "./components/EventSnapshot/EventSnapshot";
 import { Experience } from "./components/Experience/Experience";
 import { Lineup } from "./components/Lineup/Lineup";
-import { FullLineup } from "./components/FullLineup/FullLineup";
 import { Stages } from "./components/Stages/Stages";
 import { Timetable } from "./components/Timetable/Timetable";
 import { TimeMoment } from "./components/TimeMoment/TimeMoment";
@@ -12,14 +10,9 @@ import { Installations } from "./components/Installations/Installations";
 import { Gallery } from "./components/Gallery/Gallery";
 import { FilmSection } from "./components/FilmSection/FilmSection";
 import { Venue } from "./components/Venue/Venue";
-import { GoogleMap } from "./components/GoogleMap/GoogleMap";
-import { EventMap } from "./components/EventMap/EventMap";
 import { Tickets } from "./components/Tickets/Tickets";
 import { Countdown } from "./components/Countdown/Countdown";
-import { Community } from "./components/Community/Community";
-import { Partners } from "./components/Partners/Partners";
 import { FAQ } from "./components/FAQ/FAQ";
-import { Newsletter } from "./components/Newsletter/Newsletter";
 import { FinalCTA } from "./components/FinalCTA/FinalCTA";
 import { Footer } from "./components/Footer/Footer";
 import { useReducedMotion } from "./hooks/useReducedMotion";
@@ -33,44 +26,37 @@ export default function App() {
     <>
       <Header />
       <main id="main">
-        {/* CHAPTER 01 — ARRIVAL */}
+        {/* CAPÍTULO 01 — CHEGADA */}
         <HeroSequence />
 
-        {/* CHAPTER 02 — THE IDEA */}
+        {/* CAPÍTULO 02 — A IDEIA (Manifesto inclui o Event Snapshot) */}
         <Manifesto />
-        <EventSnapshot />
         <Experience />
 
-        {/* CHAPTER 03 — THE SOUND */}
+        {/* CAPÍTULO 03 — O SOM (Lineup inclui o Full Lineup) */}
         <Lineup />
-        <FullLineup />
 
-        {/* CHAPTER 04 — THE WORLDS */}
+        {/* CAPÍTULO 04 — OS MUNDOS */}
         <Stages />
         <Timetable />
         <TimeMoment />
 
-        {/* CHAPTER 05 — THE EXPERIENCE */}
+        {/* CAPÍTULO 05 — A EXPERIÊNCIA */}
         <Installations />
         <Gallery />
         <FilmSection />
 
-        {/* CHAPTER 06 — THE PLACE */}
+        {/* CAPÍTULO 06 — O LUGAR (Venue inclui Google Maps + mapa do evento) */}
         <Venue />
-        <GoogleMap />
-        <EventMap />
 
-        {/* CHAPTER 07 — YOUR ACCESS */}
+        {/* CAPÍTULO 07 — SEU ACESSO */}
         <Tickets />
 
-        {/* CHAPTER 08 — THE COUNTDOWN */}
+        {/* CAPÍTULO 08 — A CONTAGEM (Countdown inclui Community) */}
         <Countdown />
-        <Community />
-        <Partners />
 
-        {/* CHAPTER 09 — THE END / THE BEGINNING */}
+        {/* CAPÍTULO 09 — O FIM / O COMEÇO (FinalCTA inclui Newsletter) */}
         <FAQ />
-        <Newsletter />
         <FinalCTA />
       </main>
       <Footer />

@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  height: 220vh;
+  height: 190vh;
   background: var(--void);
 }
 
@@ -114,7 +114,8 @@
   flex-direction: column;
   justify-content: flex-end;
   padding: var(--section-pad-x);
-  padding-top: clamp(6rem, 5rem + 3vw, 8rem);
+  /* hard floor that always clears the fixed header, on every viewport height */
+  padding-top: max(clamp(6rem, 5rem + 3vw, 8rem), 88px);
   opacity: 0;
   transition: opacity var(--dur-slow) var(--ease-out);
   will-change: opacity, transform;
@@ -128,10 +129,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--space-sm);
+  gap: clamp(0.6rem, 0.4rem + 1vh, var(--space-sm));
   max-width: 640px;
   color: var(--afterglow);
-  padding-bottom: clamp(2rem, 1.5rem + 3vw, 4rem);
+  padding-bottom: clamp(1.25rem, 0.75rem + 2.5vh, 4rem);
 }
 
 .hero__iris-line {
@@ -142,7 +143,9 @@
 }
 
 .hero__title {
-  font-size: var(--fs-display);
+  /* tied to vh as well as vw so it always fits above the CTA on short viewports
+     instead of overflowing up and colliding with the fixed header */
+  font-size: clamp(2.5rem, 2.5vw + 4vh + 0.6rem, 7.5rem);
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 0.98;
@@ -236,7 +239,7 @@
 
 @media (max-width: 759px) {
   .hero__title {
-    font-size: clamp(2.6rem, 2rem + 8vw, 4rem);
+    font-size: clamp(2.2rem, 6vw + 3vh, 4rem);
   }
   .hero__meta {
     flex-direction: column;
@@ -245,6 +248,28 @@
   }
   .hero__scroll-indicator {
     display: none;
+  }
+}
+
+/* Extra safety net for short viewports (small laptops, landscape phones,
+   split-screen windows) so the title + CTA stack never creeps up under
+   the fixed header. */
+@media (max-height: 700px) {
+  .hero__content {
+    padding-top: 80px;
+  }
+  .hero__copy {
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+  }
+  .hero__title {
+    font-size: clamp(2rem, 3vw + 3vh, 4.5rem);
+  }
+  .hero__signature {
+    display: none;
+  }
+  .hero__meta {
+    padding-block: 0.4rem;
   }
 }
 

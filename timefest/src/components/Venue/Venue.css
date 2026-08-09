@@ -98,7 +98,21 @@
   color: var(--color-muted);
 }
 
+.venue__location {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  margin-top: var(--space-xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-border);
+}
+
 @media (min-width: 860px) {
+  .venue__location {
+    grid-template-columns: 1.1fr 1fr;
+    gap: var(--space-lg);
+  }
+
   .venue__media {
     grid-template-columns: 1.3fr 1fr;
     grid-template-rows: auto auto;

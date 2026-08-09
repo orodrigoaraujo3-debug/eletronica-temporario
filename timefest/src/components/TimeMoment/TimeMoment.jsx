@@ -75,7 +75,7 @@ export function TimeMoment() {
 
         <div className="time-moment__center">
           <div ref={ringRef} className="time-moment__ring" aria-hidden="true">
-            <img src={assets.objects3d.ringsConcentric} alt="" />
+            <img src={assets.objects3d.ringTiltB} alt="" />
           </div>
           <p ref={clockRef} className="time-moment__clock" aria-live="off">
             {CLOCK_STEPS[0]}
@@ -83,7 +83,7 @@ export function TimeMoment() {
         </div>
 
         <p ref={captionRef} className="time-moment__caption">
-          THIS IS THE MOMENT.
+          ESTE É O MOMENTO.
         </p>
       </div>
     </section>

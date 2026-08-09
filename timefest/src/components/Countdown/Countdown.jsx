@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { eventData } from "../../data/eventData";
 import { assets } from "../../assets/manifest";
 import { useReveal } from "../../hooks/useReveal";
+import { Community } from "../Community/Community";
 import "./Countdown.css";
 
 const TARGET = new Date(eventData.date.iso).getTime();
@@ -33,10 +34,10 @@ export function Countdown() {
     <section className="countdown section" data-theme="light" aria-labelledby="countdown-title">
       <div className="container">
         <div ref={revealRef} className="countdown__inner reveal">
-          <p className="chapter-mark">CHAPTER 08 — THE COUNTDOWN</p>
-          <span className="micro-label">TIME UNTIL TIME</span>
+          <p className="chapter-mark">CAPÍTULO 08 — A CONTAGEM</p>
+          <span className="micro-label">CONTAGEM REGRESSIVA</span>
           <h2 id="countdown-title" className="visually-hidden">
-            Countdown to TIME FEST
+            Contagem regressiva para o TIME FEST
           </h2>
 
           <div className="countdown__display">
@@ -44,12 +45,12 @@ export function Countdown() {
             <div className="countdown__digits" role="timer" aria-live="off">
               <div className="countdown__unit">
                 <span className="countdown__value">{pad(time.days)}</span>
-                <span className="countdown__label">DAYS</span>
+                <span className="countdown__label">DIAS</span>
               </div>
               <span className="countdown__sep">:</span>
               <div className="countdown__unit">
                 <span className="countdown__value">{pad(time.hours)}</span>
-                <span className="countdown__label">HOURS</span>
+                <span className="countdown__label">HORAS</span>
               </div>
               <span className="countdown__sep">:</span>
               <div className="countdown__unit">
@@ -59,11 +60,13 @@ export function Countdown() {
               <span className="countdown__sep">:</span>
               <div className="countdown__unit">
                 <span className="countdown__value">{pad(time.seconds)}</span>
-                <span className="countdown__label">SEC</span>
+                <span className="countdown__label">SEG</span>
               </div>
             </div>
           </div>
         </div>
+
+        <Community />
       </div>
     </section>
   );

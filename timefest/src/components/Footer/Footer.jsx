@@ -1,14 +1,14 @@
-import { eventData, socialLinks } from "../../data/eventData";
+import { eventData, socialLinks, partnerCategories } from "../../data/eventData";
 import "./Footer.css";
 
 const COLUMNS = [
   {
-    title: "EXPLORE",
+    title: "EXPLORAR",
     links: [
       { label: "Lineup", href: "#lineup" },
-      { label: "Experience", href: "#experience" },
-      { label: "Stages", href: "#stages" },
-      { label: "Tickets", href: "#tickets" },
+      { label: "Experiência", href: "#experience" },
+      { label: "Palcos", href: "#stages" },
+      { label: "Ingressos", href: "#tickets" },
     ],
   },
   {
@@ -35,6 +35,15 @@ export function Footer() {
 
   return (
     <footer className="site-footer" data-theme="light">
+      <div className="container site-footer__partners">
+        <span className="site-footer__partners-label">PARCEIROS</span>
+        <ul className="site-footer__partners-list">
+          {partnerCategories.map((p) => (
+            <li key={p}>{p}</li>
+          ))}
+        </ul>
+      </div>
+
       <div className="container site-footer__top">
         <div className="site-footer__brand">
           <p className="site-footer__logo">
@@ -62,8 +71,8 @@ export function Footer() {
           </nav>
         ))}
 
-        <nav className="site-footer__col" aria-label="Follow">
-          <p className="site-footer__col-title">FOLLOW</p>
+        <nav className="site-footer__col" aria-label="Siga-nos">
+          <p className="site-footer__col-title">SIGA-NOS</p>
           <ul>
             {socialLinks.map((l) => (
               <li key={l.label}>

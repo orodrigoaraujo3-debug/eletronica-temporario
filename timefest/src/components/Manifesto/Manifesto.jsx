@@ -1,5 +1,6 @@
 import { useReveal } from "../../hooks/useReveal";
 import { assets } from "../../assets/manifest";
+import { EventSnapshot } from "../EventSnapshot/EventSnapshot";
 import "./Manifesto.css";
 
 export function Manifesto() {
@@ -10,15 +11,15 @@ export function Manifesto() {
     <section className="manifesto section" data-theme="light" aria-labelledby="manifesto-title">
       <div className="container manifesto__inner">
         <div className="manifesto__col">
-          <p className="chapter-mark">CHAPTER 02 — THE IDEA</p>
+          <p className="chapter-mark">CAPÍTULO 02 — A IDEIA</p>
           <div ref={titleReveal} className="reveal">
-            <span className="micro-label">OUR MANIFESTO</span>
+            <span className="micro-label">NOSSO MANIFESTO</span>
             <h2 id="manifesto-title" className="manifesto__title">
-              Moments.
+              Momentos.
               <br />
-              Sound.
+              Som.
               <br />
-              Eternally You.
+              Eternamente Você.
             </h2>
           </div>
         </div>
@@ -29,16 +30,20 @@ export function Manifesto() {
             vive o presente e deixa o tempo desaparecer.
           </p>
           <p className="manifesto__sub">
-            Four stages.
+            Quatro palcos.
             <br />
-            Infinite moments.
+            Momentos infinitos.
             <br />
-            One experience.
+            Uma experiência.
           </p>
         </div>
 
         <div className="manifesto__object" aria-hidden="true">
           <img src={assets.objects3d.glassOrb} alt="" loading="lazy" />
+        </div>
+
+        <div className="manifesto__snapshot">
+          <EventSnapshot />
         </div>
       </div>
     </section>

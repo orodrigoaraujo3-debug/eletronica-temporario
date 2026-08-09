@@ -235,7 +235,7 @@ export function HeroSequence() {
             </svg>
           </span>
           <span className="hero__loading-word">TIME FEST</span>
-          <span className="hero__loading-label">LOADING EXPERIENCE</span>
+          <span className="hero__loading-label">CARREGANDO EXPERIÊNCIA</span>
           <span className="hero__loading-bar">
             <span className="hero__loading-bar-fill" style={{ width: `${Math.round(loadProgress * 100)}%` }} />
           </span>
@@ -261,17 +261,17 @@ export function HeroSequence() {
             </div>
 
             <a href="#tickets" className="btn btn--ghost-light hero__cta">
-              GET YOUR TICKET <span className="arrow">→</span>
+              GARANTIR MEU INGRESSO <span className="arrow">→</span>
             </a>
           </div>
 
           <div ref={ringRef} className="hero__ring" aria-hidden="true">
-            <img src={assets.objects3d.ringsConcentric} alt="" />
+            <img src={assets.objects3d.ringFront} alt="" />
           </div>
 
           <div className="hero__scroll-indicator" aria-hidden="true">
             <span className="hero__scroll-line" />
-            <span className="hero__scroll-word">SCROLL</span>
+            <span className="hero__scroll-word">ROLE</span>
           </div>
         </div>
       </div>

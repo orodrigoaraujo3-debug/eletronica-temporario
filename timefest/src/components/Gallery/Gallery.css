@@ -49,12 +49,12 @@
   .gallery__img--a { grid-column: 1 / span 7; aspect-ratio: 16/10; }
   .gallery__img--b { grid-column: 8 / span 5; aspect-ratio: 3/4; }
 
-  .gallery__text--a { grid-column: 3 / span 8; font-size: var(--fs-display); padding-block: var(--space-xl); }
+  .gallery__text--a { grid-column: 3 / span 8; font-size: var(--fs-h1); padding-block: var(--space-lg); }
 
-  .gallery__img--c { grid-column: 5 / span 4; aspect-ratio: 3/4; }
+  .gallery__img--c { grid-column: 5 / span 4; aspect-ratio: 16/12; }
 
   .gallery__img--d { grid-column: 1 / span 4; aspect-ratio: 4/5; }
-  .gallery__img--e { grid-column: 5 / span 4; aspect-ratio: 4/5; margin-top: var(--space-xl); }
+  .gallery__img--e { grid-column: 5 / span 4; aspect-ratio: 4/5; margin-top: var(--space-lg); }
 
   .gallery__text--b { grid-column: 9 / span 4; align-items: flex-start; text-align: left; font-size: var(--fs-h2); }
 

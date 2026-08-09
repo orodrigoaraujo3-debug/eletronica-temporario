@@ -2,8 +2,13 @@
   position: relative;
   background: var(--void);
   color: var(--afterglow);
-  padding-block: var(--space-2xl);
+  padding-block: var(--space-xl);
   overflow: hidden;
+}
+
+.final-cta__newsletter-wrap {
+  position: relative;
+  margin-bottom: var(--space-xl);
 }
 
 .final-cta__bg {

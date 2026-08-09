@@ -1,7 +1,4 @@
 .manifesto {
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
   overflow: hidden;
 }
 
@@ -11,6 +8,13 @@
   grid-template-columns: repeat(12, 1fr);
   gap: var(--space-lg) var(--space-md);
   align-items: end;
+}
+
+.manifesto__snapshot {
+  grid-column: 1 / -1;
+  margin-top: var(--space-md);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-border);
 }
 
 .manifesto__col {

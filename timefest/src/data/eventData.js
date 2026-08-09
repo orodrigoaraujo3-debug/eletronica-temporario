@@ -1,4 +1,4 @@
-// Central, editable event data. Update here — never scatter copy across components.
+// Dados centrais e editáveis do evento. Atualize aqui — nunca espalhe textos pelos componentes.
 export const eventData = {
   name: "TIME FEST",
   tagline: "TIME IS THE EXPERIENCE.",
@@ -7,7 +7,7 @@ export const eventData = {
   date: {
     iso: "2026-12-19T20:00:00-03:00",
     display: "19.12.26",
-    weekday: "SATURDAY",
+    weekday: "SÁBADO",
     doors: "20:00",
     end: "08:00",
   },
@@ -23,15 +23,6 @@ export const eventData = {
   },
   age: "18+",
   stagesCount: 4,
-  phrases: {
-    moments: ["MOMENTS.", "SOUND.", "ETERNALLY YOU."],
-    journey: ["A JOURNEY THROUGH", "SOUND, SPACE AND TIME."],
-    worlds: ["FOUR WORLDS.", "ONE NIGHT."],
-    night: ["YOUR NIGHT", "IN TIME."],
-    present: "BE PRESENT.",
-    lose: ["LOSE TRACK", "OF TIME."],
-    running: ["TIME IS", "RUNNING."],
-  },
 };
 
 export const socialLinks = [
@@ -42,10 +33,18 @@ export const socialLinks = [
 ];
 
 export const infoFacilities = [
-  { label: "PARKING", note: "On-site" },
-  { label: "ACCESSIBILITY", note: "Full access" },
-  { label: "FOOD & DRINKS", note: "Curated" },
-  { label: "LOCKERS", note: "Available" },
-  { label: "FIRST AID", note: "On-site" },
-  { label: "CASHLESS", note: "Wristband pay" },
+  { label: "ESTACIONAMENTO", note: "No local" },
+  { label: "ACESSIBILIDADE", note: "Acesso total" },
+  { label: "COMIDA & BEBIDA", note: "Seleção curada" },
+  { label: "GUARDA-VOLUMES", note: "Disponível" },
+  { label: "PRIMEIROS SOCORROS", note: "No local" },
+  { label: "CASHLESS", note: "Pagamento pela pulseira" },
+];
+
+// Categorias de patrocínio — placeholders discretos até a confirmação oficial dos parceiros.
+export const partnerCategories = [
+  "PATROCÍNIO MASTER",
+  "APOIO CULTURAL",
+  "PARCEIRO DE BEBIDAS",
+  "PARCEIRO DE MOBILIDADE",
 ];

@@ -42,10 +42,10 @@ export function FAQ() {
     <section id="faq" className="faq section" data-theme="light" aria-labelledby="faq-title">
       <div className="container">
         <div ref={headRef} className="faq__head reveal">
-          <p className="chapter-mark">CHAPTER 09 — THE END / THE BEGINNING</p>
+          <p className="chapter-mark">CAPÍTULO 09 — O FIM / O COMEÇO</p>
           <span className="micro-label">FAQ</span>
           <h2 id="faq-title" className="faq__title">
-            QUESTIONS.
+            PERGUNTAS FREQUENTES.
           </h2>
         </div>
 
