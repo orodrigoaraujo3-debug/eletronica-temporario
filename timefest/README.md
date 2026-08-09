@@ -1,16 +1,30 @@
-# React + Vite
+# TIME FEST 2026
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Site oficial (fictício) do TIME FEST — festival premium de música eletrônica no Expominas, Belo Horizonte, em 19.12.26.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- [Vite](https://vite.dev) + [React](https://react.dev)
+- [GSAP](https://gsap.com) + ScrollTrigger para as animações controladas por scroll (Hero em sequência de frames, Time Moment, Film section)
+- [Lenis](https://lenis.darkroom.engineering) para smooth scroll
+- CSS puro com design tokens (`src/styles/tokens.css`)
 
-## React Compiler
+## Rodando localmente
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the Oxlint configuration
+## Build de produção
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```bash
+npm run build
+npm run preview
+```
+
+## Estrutura
+
+- `src/components/` — um componente por seção do site
+- `src/data/` — dados centralizados e editáveis (line-up, palcos, ingressos, FAQ, programação)
+- `src/assets/manifest.js` — mapa central de todos os assets (imagens e sequência do Hero)
