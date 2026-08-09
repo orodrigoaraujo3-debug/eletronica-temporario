@@ -1,7 +1,10 @@
 // Central asset manifest — every image reference in the app goes through this object.
 // Files live in /public/assets/** (served as-is) except the Hero frame sequence,
 // which is glob-imported below so the frame count is never hardcoded.
-const base = "/assets";
+// Built on import.meta.env.BASE_URL (Vite's configured `base`) rather than a
+// hardcoded leading slash, so paths stay correct whether the app is served from
+// the domain root or a subpath (e.g. a GitHub Pages project site).
+const base = `${import.meta.env.BASE_URL}assets`;
 
 export const assets = {
   logos: {
