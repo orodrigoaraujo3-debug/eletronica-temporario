@@ -1,0 +1,88 @@
+/* =========================================================
+   TIME FEST — Design tokens
+   70% light / 30% dark-immersive. Luxury tech × fashion editorial.
+   ========================================================= */
+:root {
+  /* ---- Brand palette (from identidade visual) ---- */
+  --void: #0f0f11;
+  --chrome: #b8bdc4;
+  --afterglow: #f6f5f2;
+  --pulse: #b99bff;
+  --radiance: #ffc1ba;
+  --iris-blue: #bfe0ff;
+
+  /* ---- Functional surface colors ---- */
+  --color-bg: var(--afterglow);
+  --color-bg-alt: #fbfaf8;
+  --color-surface: #ffffff;
+  --color-surface-translucent: rgba(255, 255, 255, 0.6);
+  --color-text: var(--void);
+  --color-text-soft: #4a4a4d;
+  --color-muted: #8a8a8f;
+  --color-border: rgba(15, 15, 17, 0.1);
+  --color-border-strong: rgba(15, 15, 17, 0.18);
+  --color-lilac: var(--pulse);
+  --color-peach: var(--radiance);
+
+  /* ---- Dark-section tokens ---- */
+  --color-bg-dark: var(--void);
+  --color-text-dark: var(--afterglow);
+  --color-muted-dark: rgba(246, 245, 242, 0.55);
+  --color-border-dark: rgba(246, 245, 242, 0.14);
+  --color-surface-dark: rgba(246, 245, 242, 0.06);
+
+  /* ---- Iridescent gradient (use sparingly) ---- */
+  --gradient-iridescent: linear-gradient(120deg, var(--pulse) 0%, var(--radiance) 55%, var(--iris-blue) 100%);
+  --gradient-iridescent-soft: radial-gradient(circle at 40% 40%, rgba(185, 155, 255, 0.35), rgba(255, 193, 186, 0.25) 45%, transparent 70%);
+
+  /* ---- Typography ---- */
+  --font-display: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --font-text: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Menlo, monospace;
+
+  --fs-micro: clamp(0.65rem, 0.62rem + 0.15vw, 0.75rem);
+  --fs-small: clamp(0.8rem, 0.78rem + 0.1vw, 0.9rem);
+  --fs-body: clamp(0.95rem, 0.9rem + 0.2vw, 1.05rem);
+  --fs-lead: clamp(1.15rem, 1.05rem + 0.5vw, 1.5rem);
+  --fs-h3: clamp(1.5rem, 1.3rem + 1vw, 2.2rem);
+  --fs-h2: clamp(2.2rem, 1.8rem + 2vw, 3.6rem);
+  --fs-h1: clamp(3rem, 2.2rem + 4.5vw, 6.5rem);
+  --fs-display: clamp(3.6rem, 2.4rem + 7vw, 9rem);
+
+  --tracking-wide: 0.18em;
+  --tracking-wider: 0.28em;
+
+  /* ---- Radii ---- */
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+
+  /* ---- Spacing ---- */
+  --space-3xs: clamp(0.25rem, 0.22rem + 0.15vw, 0.4rem);
+  --space-xs: clamp(0.5rem, 0.44rem + 0.3vw, 0.75rem);
+  --space-sm: clamp(0.9rem, 0.8rem + 0.5vw, 1.25rem);
+  --space-md: clamp(1.5rem, 1.3rem + 1vw, 2.25rem);
+  --space-lg: clamp(2.5rem, 2rem + 2.5vw, 4.5rem);
+  --space-xl: clamp(4rem, 3rem + 5vw, 8rem);
+  --space-2xl: clamp(6rem, 4rem + 8vw, 12rem);
+
+  --section-pad-y: clamp(4.5rem, 3.5rem + 5vw, 9rem);
+  --section-pad-x: clamp(1.25rem, 0.8rem + 2.5vw, 4rem);
+  --content-max: 1440px;
+
+  /* ---- Motion ---- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-fast: 0.25s;
+  --dur-mid: 0.5s;
+  --dur-slow: 0.9s;
+
+  --shadow-sm: 0 1px 2px rgba(15, 15, 17, 0.04), 0 2px 8px rgba(15, 15, 17, 0.04);
+  --shadow-md: 0 4px 16px rgba(15, 15, 17, 0.06), 0 12px 32px rgba(15, 15, 17, 0.05);
+  --shadow-glow-pulse: 0 0 0 1px rgba(185, 155, 255, 0.25), 0 8px 30px rgba(185, 155, 255, 0.18);
+
+  --z-header: 100;
+  --z-overlay: 200;
+  --z-hero-content: 10;
+}

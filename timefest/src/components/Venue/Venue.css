@@ -1,0 +1,118 @@
+.venue__head {
+  max-width: 720px;
+  margin-bottom: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.venue__title {
+  font-size: var(--fs-h1);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+
+.venue__media {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.venue__media-item {
+  margin: 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.venue__media-item--lg {
+  aspect-ratio: 16 / 10;
+}
+
+.venue__media-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.venue__facts {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-border);
+  margin-bottom: var(--space-lg);
+}
+
+.venue__address p:first-child {
+  font-family: var(--font-display);
+  font-size: var(--fs-h3);
+  text-transform: uppercase;
+  margin-bottom: var(--space-xs);
+}
+
+.venue__address p:last-child {
+  color: var(--color-text-soft);
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  line-height: 1.7;
+}
+
+.venue__data {
+  display: flex;
+  gap: var(--space-lg);
+  font-family: var(--font-mono);
+  font-size: var(--fs-lead);
+  letter-spacing: 0.02em;
+}
+
+.venue__facilities {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-lg);
+}
+
+.venue__facility {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+.venue__facility-label {
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  letter-spacing: var(--tracking-wide);
+}
+
+.venue__facility-note {
+  font-size: var(--fs-micro);
+  color: var(--color-muted);
+}
+
+.venue__facilities-disclaimer {
+  margin-top: var(--space-sm);
+  font-size: var(--fs-micro);
+  color: var(--color-muted);
+}
+
+@media (min-width: 860px) {
+  .venue__media {
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  .venue__media-item--lg {
+    grid-row: 1 / span 2;
+    aspect-ratio: auto;
+  }
+  .venue__facts {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .venue__facilities {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

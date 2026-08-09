@@ -1,0 +1,62 @@
+.final-cta {
+  position: relative;
+  background: var(--void);
+  color: var(--afterglow);
+  padding-block: var(--space-2xl);
+  overflow: hidden;
+}
+
+.final-cta__bg {
+  position: absolute;
+  inset: 0;
+}
+
+.final-cta__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.final-cta__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-md);
+}
+
+.final-cta__ring {
+  width: clamp(120px, 16vw, 220px);
+  opacity: 0.85;
+  margin-bottom: var(--space-sm);
+}
+
+.final-cta__title {
+  font-size: var(--fs-display);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+}
+
+.final-cta__meta {
+  font-family: var(--font-mono);
+  font-size: var(--fs-lead);
+  letter-spacing: 0.04em;
+  color: rgba(246, 245, 242, 0.75);
+}
+
+.final-cta__btn {
+  margin-top: var(--space-sm);
+  padding: 1.1em 2.2em;
+  font-size: var(--fs-body);
+}
+
+.final-cta__signature {
+  margin-top: var(--space-lg);
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  letter-spacing: var(--tracking-wider);
+  color: rgba(246, 245, 242, 0.55);
+}
