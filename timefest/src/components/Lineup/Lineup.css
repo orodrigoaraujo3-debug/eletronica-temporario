@@ -28,7 +28,7 @@
   gap: var(--space-md);
   overflow-x: auto;
   overflow-y: hidden;
-  scroll-snap-type: x proximity;
+  /* no scroll-snap here: it fights the continuous programmatic auto-scroll below */
   padding-bottom: var(--space-xl);
   scrollbar-width: thin;
   scrollbar-color: var(--color-border-strong) transparent;
@@ -37,6 +37,12 @@
 .lineup__track-pad {
   flex: none;
   width: 1px;
+}
+
+.lineup__set {
+  display: flex;
+  flex: none;
+  gap: var(--space-md);
 }
 
 @media (min-width: 700px) {
@@ -48,7 +54,6 @@
 .artist-card {
   flex: none;
   width: clamp(220px, 26vw, 340px);
-  scroll-snap-align: start;
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
